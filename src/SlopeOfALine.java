@@ -12,12 +12,12 @@ public class SlopeOfALine {
      */
 
     public static String slope(int x1, int y1, int x2, int y2) {
-        double slope = ((y2-y1)/(x2-x1));
         if ((x2-x1) == 0){
-            return "Your line at (" + x1 + ", " + y1 + ") and (" + x2 + ", " +
-                    y2 + ") is a vertical line, your slope is 1";
+            return "The line defined by the points (" + x1 + ", " + y1 + ") and (" + x2 + ", " +
+                    y2 + ") is a vertical line and the slope is undefined";
         }
         else {
+            double slope = (((double)y2-y1)/(x2-x1));
             return "The line defined by the points (" + x1 + ", " + y1 + ") and (" + x2 + ", " +  y2 + ") has a slope of " + slope;
         }
     }
