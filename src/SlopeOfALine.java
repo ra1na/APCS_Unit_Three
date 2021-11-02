@@ -10,6 +10,7 @@ public class SlopeOfALine {
      * @param y2 - y-coordinate of second point
      * @return - Different strings based on whether the line is vertical or not
      */
+
     public static String slope(int x1, int y1, int x2, int y2) {
         double slope = ((y2-y1)/(x2-x1));
         if ((x2-x1) == 0){
@@ -32,9 +33,6 @@ public class SlopeOfALine {
         System.out.println("Enter y2 value");
         int y2 = scan.nextInt();
         slope(x1, y1, x2, y2);
-
-
-
         }
         // Get input from the user (you will need to create a Scanner object)
         // Call and print the result of the slope method as shown in the instructions.
